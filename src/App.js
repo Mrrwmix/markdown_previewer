@@ -2,15 +2,18 @@ import React from "react";
 import "./App.css";
 import Input from "./Components/Input";
 import Output from "./Components/Output";
+import MarkdownState from "./Context/MarkdownState";
 
 function App() {
   return (
-    <div className='container-fluid'>
-      <div className='row'>
-        <Input />
-        <Output />
+    <MarkdownState>
+      <div className='container-fluid'>
+        <div className='row'>
+          <Input />
+          <Output />
+        </div>
       </div>
-    </div>
+    </MarkdownState>
   );
 }
 
